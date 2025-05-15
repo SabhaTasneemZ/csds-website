@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #004c99;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+header h1 {
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+header img {
+    max-width: 250px;
+    margin: 10px 0;
+    border-radius: 05px;
+}
+header nav {
+    margin-top: 15px;
+}
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Content Section */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content section {
+    margin-bottom: 30px;
+}
+.content section h2 {
+    color: #004c99;
+    border-bottom: 3px solid #004c99;
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+.content section p {
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.service {
+    flex: 1 1 calc(33.333% - 20px);
+    background-color: #eaf3ff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.service h3 {
+    color: #004c99;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.service p {
+    font-size: 0.95rem;
+}
+
+/* Address Section */
+#address a {
+    color: #004c99;
+    text-decoration: none;
+    font-weight: bold;
+}
+#address a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004c99;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+    }
+    .service {
+        flex: 1 1 100%;
+    }
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
